@@ -9,7 +9,7 @@
         Closing="Window_Closing">
     
     <DockPanel FocusManager.FocusedElement="{Binding ElementName=TextBox}">
-        <Menu IsMainMenu="True" DockPanel.Dock="Top" Background="#FF3A3A3A" Foreground="White">
+        <Menu IsMainMenu="True" DockPanel.Dock="Top" Background="#FF3A3A3A" Foreground="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" FontSize="14">
             <MenuItem Header="Plik">
                 <MenuItem Header="_Nowy" InputGestureText="Ctrl+N" Click="MenuItem_Click_New"/>
                 <MenuItem Header="Otworz" InputGestureText="Ctrl+O"  Click="MenuItem_Click_Open"/>
