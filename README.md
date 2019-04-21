@@ -1,7 +1,7 @@
 # Note.NET
-Little notepad program
+**Little notepad program**
 
-##ScreenShots
+## ScreenShots
 
 
 
