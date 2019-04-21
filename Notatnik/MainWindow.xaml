@@ -30,7 +30,7 @@
             <MenuItem Header="Widok">
                 <MenuItem Header="Zawijanie wierszy" IsCheckable="True" IsChecked="True" Click="MenuItem_Click_ZawijanieWierszy"/>
                 <MenuItem Header="Czcionka..." />
-                <MenuItem Header="Kolor Tla..." />
+                <MenuItem Header="Kolor Tla..." Click="MenuItem_Click_BackgroundColor"/>
                 <Separator/>
                 <MenuItem Header="Pasek narzedzi" IsCheckable="True" IsChecked="True" Click="MenuItem_Click_toolBar"/>
                 <MenuItem Header="Pasek Stanu" IsCheckable="True" IsChecked="True" Click="MenuItem_Click_statusBar"/>

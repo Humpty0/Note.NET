@@ -2,6 +2,8 @@
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
+
 namespace Notatnik
 {
     /// <summary>
@@ -173,6 +175,15 @@ namespace Notatnik
         {
             bool IsChecked = ((MenuItem)sender).IsChecked;
             statusBar.Visibility = IsChecked ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        private void MenuItem_Click_BackgroundColor(object sender, RoutedEventArgs e)
+        {
+            Color background = Colors.White;
+            if (TextBox.Background is SolidColorBrush)
+                background = (TextBox.Background as SolidColorBrush).Color;
+            if (NoteUtils.WindowsFormsHelper.ChooseColor(ref background))
+                TextBox.Background = new SolidColorBrush(background);
         }
     }
 }
