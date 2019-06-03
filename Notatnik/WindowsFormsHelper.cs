@@ -5,6 +5,10 @@ namespace NoteUtils
 {
     public static class WindowsFormsHelper
     {
+        /// <summary>
+        /// Utils for Notepad.NET
+        /// </summary>
+        
         public static System.Drawing.Color Convert(this Color color)
         {
             return System.Drawing.Color.FromArgb(color.A, color.R, color.G, color.B);

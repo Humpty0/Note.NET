@@ -167,7 +167,7 @@ namespace Notatnik
 
         private void MenuItem_Click_toolBar(object sender, RoutedEventArgs e)
         {
-            bool IsChecked = (sender as MenuItem).IsChecked;
+            bool IsChecked = ((MenuItem)sender).IsChecked;
             toolBar.Visibility = IsChecked ? Visibility.Visible : Visibility.Collapsed;
         }
 
